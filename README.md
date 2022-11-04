@@ -10,7 +10,10 @@ Open your terminal emulator (example: Commmand Prompt, Powershell, Linux Termina
 ```bash
 python hashfile.py get-hash --hash-func <hash function> --filepath <filename or it's path>
 ```
-**For Windows users:** If you compile 'hashfile.py' to an .exe file using python pyinstaller library, then execute this command.
+
+## Verify itegrity of a file
 ```bash
-hashfile get-hash --hash-func <hash function> --filepath <filename or it's path>
+python hashfile.py verify --hash-func <hash function> --filepath <filename or it's path> --hash <Pass a hash to verify>
 ```
+
+**NOTE:** For Windows users, If `hashfile.py` is compiled to `hashfile.exe` with python pyinstaller library, Python is no longer required. `hashfile` can be used instead of `python hashfile.py`
